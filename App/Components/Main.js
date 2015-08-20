@@ -1,11 +1,13 @@
 var React = require('react');
 var RouteHandler = require('react-router').RouteHandler;
 
+var Hero = require('./Hero');
+
 class Main extends React.Component {
   render() {
     return (
       <div>
-        <h1>Hello World!</h1>
+        <Hero />
         <br />
         <RouteHandler />
       </div>
