@@ -1,16 +1,13 @@
 var React = require('react');
 
-// var logoImage = 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png';
-// var headline = "Short description of Product";
-// var paragraph = "A few reasons why this product is worth using, who it's for and why they need it.";
 
 class Hero extends React.Component {
-
 
   render() {
     var logoImage = "https://raw.githubusercontent.com/lulato/lulato-components/master/static/images/lulato-logo.png";
     var headline = "Short description of Product";
-    var paragraph = "A few reasons why this product is worth using, who it's for and why they need it.";
+    var paragraph = "Lulato is a one man design studio based in Miami Beach. I build websites as well as mobile apps.";
+    var cta = "Learn more about what I do";
 
     return (
       <div className="hero">
@@ -19,9 +16,9 @@ class Hero extends React.Component {
             <img src={logoImage} alt="Logo Image" />
           </a>
           <div className="hero-copy">
-            <h1>{headline}</h1>
             <p>{paragraph}</p>
           </div>
+          <a href="#">{cta}</a>
         </div>
       </div>
     )

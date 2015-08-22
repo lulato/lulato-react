@@ -201,14 +201,25 @@ picture {
   margin: 0;
   max-width: 100%; }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+
+body {
+  background-color: yellow; }
+
+#app {
+  height: 100%;
+  background-color: red; }
+
 .hero {
-  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png"), -webkit-linear-gradient(10deg, #20392B, #7F99BE), no-repeat #7F99BE scroll;
-  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png"), linear-gradient(10deg, #20392B, #7F99BE), no-repeat #7F99BE scroll;
-  background-color: #324766;
+  background-color: white;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 3em; }
+  padding-bottom: 3em;
+  height: 100%; }
   .hero .hero-logo img {
     height: 4em;
     margin-bottom: 1em; }
@@ -217,8 +228,8 @@ picture {
     margin-left: auto;
     margin-right: auto;
     margin: auto;
-    padding: 3.5em;
-    text-align: center; }
+    padding: 2em;
+    text-align: left; }
     .hero .hero-inner::after {
       clear: both;
       content: "";
@@ -227,20 +238,26 @@ picture {
       clear: both;
       content: "";
       display: table; }
+    @media screen and (min-width: 53.75em) {
+      .hero .hero-inner {
+        padding: 4em; } }
+    .hero .hero-inner a {
+      color: #a1a1a1;
+      font-size: 1em; }
+      @media screen and (min-width: 53.75em) {
+        .hero .hero-inner a {
+          font-size: 1.2em; } }
     .hero .hero-inner .hero-copy {
-      text-align: center; }
-      .hero .hero-inner .hero-copy h1 {
-        color: white;
-        font-size: 1.6em;
-        margin-bottom: 0.5em; }
-        @media screen and (min-width: 53.75em) {
-          .hero .hero-inner .hero-copy h1 {
-            font-size: 1.8em; } }
+      text-align: left;
+      margin-bottom: 3em; }
       .hero .hero-inner .hero-copy p {
-        color: white;
-        line-height: 1.4em;
-        margin: 0 auto 3em auto; }
+        font-size: 1.2em;
+        font-weight: 300;
+        letter-spacing: 0.03em;
+        color: #3C3C3C;
+        line-height: 1.8em; }
         @media screen and (min-width: 53.75em) {
           .hero .hero-inner .hero-copy p {
-            font-size: 1.1em;
-            max-width: 40%; } }
+            font-size: 2em;
+            line-height: 1.8em;
+            max-width: 75%; } }

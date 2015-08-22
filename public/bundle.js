@@ -23554,7 +23554,7 @@
 	var Route = Router.Route;
 
 	var Home = __webpack_require__(197);
-	var Main = __webpack_require__(198);
+	var Main = __webpack_require__(199);
 
 	module.exports = React.createElement(
 	  Route,
@@ -23578,6 +23578,8 @@
 
 	var React = __webpack_require__(1);
 
+	var Hero = __webpack_require__(198);
+
 	var Home = (function (_React$Component) {
 	  _inherits(Home, _React$Component);
 
@@ -23590,11 +23592,7 @@
 	  _createClass(Home, [{
 	    key: 'render',
 	    value: function render() {
-	      return React.createElement(
-	        'h2',
-	        null,
-	        'Search by Username Above'
-	      );
+	      return React.createElement(Hero, null);
 	    }
 	  }]);
 
@@ -23605,52 +23603,6 @@
 
 /***/ },
 /* 198 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var React = __webpack_require__(1);
-	var RouteHandler = __webpack_require__(157).RouteHandler;
-
-	var Hero = __webpack_require__(199);
-
-	var Main = (function (_React$Component) {
-	  _inherits(Main, _React$Component);
-
-	  function Main() {
-	    _classCallCheck(this, Main);
-
-	    _get(Object.getPrototypeOf(Main.prototype), 'constructor', this).apply(this, arguments);
-	  }
-
-	  _createClass(Main, [{
-	    key: 'render',
-	    value: function render() {
-	      return React.createElement(
-	        'div',
-	        null,
-	        React.createElement(Hero, null),
-	        React.createElement('br', null),
-	        React.createElement(RouteHandler, null)
-	      );
-	    }
-	  }]);
-
-	  return Main;
-	})(React.Component);
-
-	module.exports = Main;
-
-/***/ },
-/* 199 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -23664,10 +23616,6 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var React = __webpack_require__(1);
-
-	// var logoImage = 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png';
-	// var headline = "Short description of Product";
-	// var paragraph = "A few reasons why this product is worth using, who it's for and why they need it.";
 
 	var Hero = (function (_React$Component) {
 	  _inherits(Hero, _React$Component);
@@ -23683,7 +23631,8 @@
 	    value: function render() {
 	      var logoImage = "https://raw.githubusercontent.com/lulato/lulato-components/master/static/images/lulato-logo.png";
 	      var headline = "Short description of Product";
-	      var paragraph = "A few reasons why this product is worth using, who it's for and why they need it.";
+	      var paragraph = "Lulato is a one man design studio based in Miami Beach. I build websites as well as mobile apps.";
+	      var cta = "Learn more about what I do";
 
 	      return React.createElement(
 	        "div",
@@ -23700,15 +23649,15 @@
 	            "div",
 	            { className: "hero-copy" },
 	            React.createElement(
-	              "h1",
-	              null,
-	              headline
-	            ),
-	            React.createElement(
 	              "p",
 	              null,
 	              paragraph
 	            )
+	          ),
+	          React.createElement(
+	            "a",
+	            { href: "#" },
+	            cta
 	          )
 	        )
 	      );
@@ -23719,6 +23668,46 @@
 	})(React.Component);
 
 	module.exports = Hero;
+
+/***/ },
+/* 199 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var React = __webpack_require__(1);
+	var RouteHandler = __webpack_require__(157).RouteHandler;
+
+	var Hero = __webpack_require__(198);
+
+	var Main = (function (_React$Component) {
+	  _inherits(Main, _React$Component);
+
+	  function Main() {
+	    _classCallCheck(this, Main);
+
+	    _get(Object.getPrototypeOf(Main.prototype), 'constructor', this).apply(this, arguments);
+	  }
+
+	  _createClass(Main, [{
+	    key: 'render',
+	    value: function render() {
+	      return React.createElement(RouteHandler, null);
+	    }
+	  }]);
+
+	  return Main;
+	})(React.Component);
+
+	module.exports = Main;
 
 /***/ }
 /******/ ]);

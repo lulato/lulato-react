@@ -1,9 +1,11 @@
 var React = require('react');
 
+var Hero = require('./Hero');
+
 class Home extends React.Component {
   render() {
     return (
-      <h2>Search by Username Above</h2>
+      <Hero />
     )
   }
 }

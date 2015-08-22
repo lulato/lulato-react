@@ -6,11 +6,7 @@ var Hero = require('./Hero');
 class Main extends React.Component {
   render() {
     return (
-      <div>
-        <Hero />
-        <br />
         <RouteHandler />
-      </div>
     )
   }
 }

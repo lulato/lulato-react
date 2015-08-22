@@ -4,16 +4,18 @@
   $large-screen: em(860) !default;
   $hero-background-top: #7F99BE; 
   $hero-background-bottom: #20392B;
-  $hero-color: white;
+  $hero-color: #3C3C3C;
+  $hero-action-color: #A2A2A2;
   $gradient-angle: 10deg;
   $hero-image: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png';
 
-  @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
-  background-color: #324766;
+  // @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
+  background-color: white;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 3em;
+  height: 100%;
 
   .hero-logo img {
     height: 4em;
@@ -24,32 +26,38 @@
     @include outer-container;
     @include clearfix;
     margin: auto;
-    padding: 3.5em;
-    text-align: center;
+    padding: 2em;
+    text-align: left;
+    @include media($large-screen) {
+      padding: 4em;
+    }
 
-    .hero-copy {
-      text-align: center;
-      
-      h1 {
-        color: $hero-color;
-        font-size: 1.6em;
-        margin-bottom: 0.5em;
-
-        @include media($large-screen) {
-          font-size: 1.8em;
-        }
-      }
-
-      p {
-        color: $hero-color;
-        line-height: 1.4em;
-        margin: 0 auto 3em auto; 
-
-        @include media($large-screen) {
-          font-size: 1.1em;
-          max-width: 40%;
-        }
+    a {
+      color: #a1a1a1;
+      font-size: 1em;
+      @include media($large-screen) {
+        font-size: 1.2em;
       }
     }
+
+    .hero-copy {
+      text-align: left;
+      margin-bottom: 3em;
+
+      p {
+        font-size: 1.2em;
+        font-weight: 300;
+        letter-spacing: 0.03em;
+        color: $hero-color;
+        line-height: 1.8em;
+        // margin: 0 auto 3em auto; 
+
+        @include media($large-screen) {
+          font-size: 2em;
+          line-height: 1.8em;
+          max-width: 75%;
+        }
+      }
+    } // end .hero-copy
   }
 }
