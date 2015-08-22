@@ -18,7 +18,7 @@ class Hero extends React.Component {
           <div className="hero-copy">
             <p>{paragraph}</p>
           </div>
-          <a href="#">{cta}</a>
+          <a className="cta" href="#">{cta}</a>
         </div>
       </div>
     )

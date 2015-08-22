@@ -23656,7 +23656,7 @@
 	          ),
 	          React.createElement(
 	            "a",
-	            { href: "#" },
+	            { className: "cta", href: "#" },
 	            cta
 	          )
 	        )

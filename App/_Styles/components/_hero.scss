@@ -32,12 +32,23 @@
       padding: 4em;
     }
 
-    a {
+    .cta {
       color: #a1a1a1;
       font-size: 1em;
+      &:after {
+        content: '';
+        display: block;
+        left: 0;
+        right: 0;
+        top: 50%;
+        height: .1em;
+        width: 12.4em;
+        background: #a1a1a1;
+      }
       @include media($large-screen) {
         font-size: 1.2em;
       }
+
     }
 
     .hero-copy {

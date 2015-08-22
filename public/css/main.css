@@ -241,11 +241,20 @@ body {
     @media screen and (min-width: 53.75em) {
       .hero .hero-inner {
         padding: 4em; } }
-    .hero .hero-inner a {
+    .hero .hero-inner .cta {
       color: #a1a1a1;
       font-size: 1em; }
+      .hero .hero-inner .cta:after {
+        content: '';
+        display: block;
+        left: 0;
+        right: 0;
+        top: 50%;
+        height: .1em;
+        width: 12.4em;
+        background: #a1a1a1; }
       @media screen and (min-width: 53.75em) {
-        .hero .hero-inner a {
+        .hero .hero-inner .cta {
           font-size: 1.2em; } }
     .hero .hero-inner .hero-copy {
       text-align: left;
