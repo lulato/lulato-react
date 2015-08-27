@@ -23690,6 +23690,9 @@
 
 	var Hero = __webpack_require__(198);
 
+	// The body bg is yellow
+	// The App bg is red
+
 	var Main = (function (_React$Component) {
 	  _inherits(Main, _React$Component);
 
@@ -23803,19 +23806,19 @@
 	            React.createElement(
 	              "a",
 	              null,
-	              "laudantium harum"
+	              "Some Link "
 	            ),
 	            "illo quam nulla dolor alias iure impedit! Accusamus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, a, ullam, voluptatum incidunt neque porro numquam doloremque vel inventore distinctio laudantium harum illo quam nulla dolor alias iure impedit.",
 	            React.createElement(
 	              "a",
-	              { href: "javascript:void(0)", className: "read-more" },
-	              "Read More ",
-	              React.createElement(
-	                "span",
-	                null,
-	                "›"
-	              )
+	              { href: "#", className: "read-more" },
+	              "Read More"
 	            )
+	          ),
+	          React.createElement(
+	            "a",
+	            { href: "#", className: "read-more" },
+	            "Read More"
 	          ),
 	          React.createElement(
 	            "h3",

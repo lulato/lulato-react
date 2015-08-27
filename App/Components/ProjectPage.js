@@ -22,13 +22,14 @@ class ProjectPage extends React.Component {
   <p>
     <span>Lorem ipsum dolor sit amet</span>, 
     consectetur adipisicing elit. Consequatur a, ullam, voluptatum incidunt 
-    neque doloremque vel inventore distinctio <a>laudantium harum</a> 
+    neque doloremque vel inventore distinctio <a>Some Link </a> 
     illo quam nulla dolor alias iure impedit! Accusamus! Lorem ipsum dolor sit amet, 
     consectetur adipisicing elit. Accusamus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
     Consequatur, a, ullam, voluptatum incidunt neque porro numquam doloremque vel inventore distinctio 
     laudantium harum illo quam nulla dolor alias iure impedit.
-    <a href="javascript:void(0)" className="read-more">Read More <span>&rsaquo;</span></a>
+    <a href="#" className="read-more">Read More</a>
   </p>
+  <a href="#" className="read-more">Read More</a>
   <h3>Subheading lorem</h3>
   <p><span>Consequatur ullam, voluptatum</span> incidunt neque porro numquam doloremque vel inventore distinctio laudantium harum illo quam nulla dolor alias iure impedit. Accusamus. Consequatur, a, ullam, voluptatum incidunt neque porro numquam doloremque vel inventore distinctio laudantium harum illo quam nulla dolor alias iure impedit! Accusamus.</p>
   <hr />
