@@ -23746,16 +23746,97 @@
 	      var img = "https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png";
 	      return React.createElement(
 	        "div",
-	        { className: "image-gradient-dynamic" },
-	        React.createElement("img", { src: img, alt: "" }),
-	        React.createElement("div", { className: "overlay" }),
+	        null,
 	        React.createElement(
 	          "div",
-	          { className: "copy" },
+	          { className: "image-gradient-dynamic" },
+	          React.createElement("img", { src: img, alt: "" }),
+	          React.createElement("div", { className: "overlay" }),
+	          React.createElement(
+	            "div",
+	            { className: "copy" },
+	            React.createElement(
+	              "p",
+	              null,
+	              "Dynamic height container"
+	            )
+	          )
+	        ),
+	        React.createElement(
+	          "article",
+	          { className: "type-system-sans" },
+	          React.createElement(
+	            "p",
+	            { className: "type" },
+	            "Article Type"
+	          ),
+	          React.createElement(
+	            "h1",
+	            null,
+	            "Article Heading"
+	          ),
+	          React.createElement(
+	            "h2",
+	            null,
+	            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, perferendis! Odit quisquam ",
+	            React.createElement(
+	              "code",
+	              null,
+	              "code block"
+	            ),
+	            " dicta illum ipsa quod natus iure aliquid necessitatibus veritatis, itaque magnam aliquam, dolorum nostrum nemo, explicabo perspiciatis nobis!"
+	          ),
+	          React.createElement(
+	            "p",
+	            { className: "date" },
+	            "30 Mar 2014"
+	          ),
 	          React.createElement(
 	            "p",
 	            null,
-	            "Dynamic height container"
+	            React.createElement(
+	              "span",
+	              null,
+	              "Lorem ipsum dolor sit amet"
+	            ),
+	            ", consectetur adipisicing elit. Consequatur a, ullam, voluptatum incidunt neque doloremque vel inventore distinctio ",
+	            React.createElement(
+	              "a",
+	              null,
+	              "laudantium harum"
+	            ),
+	            "illo quam nulla dolor alias iure impedit! Accusamus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, a, ullam, voluptatum incidunt neque porro numquam doloremque vel inventore distinctio laudantium harum illo quam nulla dolor alias iure impedit.",
+	            React.createElement(
+	              "a",
+	              { href: "javascript:void(0)", className: "read-more" },
+	              "Read More ",
+	              React.createElement(
+	                "span",
+	                null,
+	                "›"
+	              )
+	            )
+	          ),
+	          React.createElement(
+	            "h3",
+	            null,
+	            "Subheading lorem"
+	          ),
+	          React.createElement(
+	            "p",
+	            null,
+	            React.createElement(
+	              "span",
+	              null,
+	              "Consequatur ullam, voluptatum"
+	            ),
+	            " incidunt neque porro numquam doloremque vel inventore distinctio laudantium harum illo quam nulla dolor alias iure impedit. Accusamus. Consequatur, a, ullam, voluptatum incidunt neque porro numquam doloremque vel inventore distinctio laudantium harum illo quam nulla dolor alias iure impedit! Accusamus."
+	          ),
+	          React.createElement("hr", null),
+	          React.createElement(
+	            "p",
+	            { className: "author" },
+	            "Author Name"
 	          )
 	        )
 	      );
