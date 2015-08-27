@@ -23556,10 +23556,12 @@
 	var Home = __webpack_require__(197);
 	var Main = __webpack_require__(199);
 
+	var ProjectPage = __webpack_require__(200);
+
 	module.exports = React.createElement(
 	  Route,
 	  { name: 'app', path: '/', handler: Main },
-	  React.createElement(DefaultRoute, { handler: Home })
+	  React.createElement(DefaultRoute, { handler: ProjectPage })
 	);
 
 /***/ },
@@ -23700,7 +23702,11 @@
 	  _createClass(Main, [{
 	    key: 'render',
 	    value: function render() {
-	      return React.createElement(RouteHandler, null);
+	      return React.createElement(
+	        'div',
+	        { style: { "height": "100%" } },
+	        React.createElement(RouteHandler, null)
+	      );
 	    }
 	  }]);
 
@@ -23708,6 +23714,58 @@
 	})(React.Component);
 
 	module.exports = Main;
+
+/***/ },
+/* 200 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var React = __webpack_require__(1);
+
+	var ProjectPage = (function (_React$Component) {
+	  _inherits(ProjectPage, _React$Component);
+
+	  function ProjectPage() {
+	    _classCallCheck(this, ProjectPage);
+
+	    _get(Object.getPrototypeOf(ProjectPage.prototype), "constructor", this).apply(this, arguments);
+	  }
+
+	  _createClass(ProjectPage, [{
+	    key: "render",
+	    value: function render() {
+	      var img = "https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png";
+	      return React.createElement(
+	        "div",
+	        { className: "image-gradient-dynamic" },
+	        React.createElement("img", { src: img, alt: "" }),
+	        React.createElement("div", { className: "overlay" }),
+	        React.createElement(
+	          "div",
+	          { className: "copy" },
+	          React.createElement(
+	            "p",
+	            null,
+	            "Dynamic height container"
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return ProjectPage;
+	})(React.Component);
+
+	module.exports = ProjectPage;
 
 /***/ }
 /******/ ]);
