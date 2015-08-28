@@ -71,6 +71,7 @@ article.type-system-sans {
   @include clearfix;
   font-family: $sans-serif;
   text-align: left;
+  padding: 1.5em;
   
   h1, h2, h3, p {
     margin: 0;
